@@ -11,7 +11,7 @@ buttonChange.addEventListener("click", function() {
 });
 
 
-
+// below is the the random background color generator
 function getRandomColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`; 
 }
@@ -20,3 +20,11 @@ document.getElementById("randomColorBtn").addEventListener("click", function() {
     document.body.style.backgroundColor = getRandomColor();
 });
 
+
+
+// below is the button that changes on click
+function changeBtnStyle() {
+    const btn = document.querySelector(".cool-btn")
+    btn.classList.toggle("glow"); // Toggles glow effect
+   }
+   
