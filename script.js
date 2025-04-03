@@ -22,9 +22,24 @@ document.getElementById("randomColorBtn").addEventListener("click", function() {
 
 
 
-// below is the button that changes on click
+// below is the button that changes glow on click
 function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn")
     btn.classList.toggle("glow"); // Toggles glow effect
    }
-   
+
+
+// below is the dark mode toggle
+function changetodark() {
+    let darktoggle = document.querySelector(".dark");
+    
+    // Toggle a class (e.g., "dark-mode") on the body or another element
+    document.body.classList.toggle("dark-mode");
+
+    // Change button text based on the presence of the class
+    if (document.body.classList.contains("dark-mode")) {
+        darktoggle.innerHTML = "Light Mode";
+    } else {
+        darktoggle.innerHTML = "Dark Mode";
+    }
+}
