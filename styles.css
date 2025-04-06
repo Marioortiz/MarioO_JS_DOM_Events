@@ -1,0 +1,5 @@
+.completed {
+    text-decoration: line-through;
+    background-color: #d4f4d2; /* light green */
+    color: #555;
+  }
